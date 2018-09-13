@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rolando Dados</string>
+    <string name="pontos">Pontos: 0</string>
+    <string name="rolar">Rolar</string>
+    <string name="parar">Parar</string>
+    <string name="reiniciar">Reiniciar</string>
+</resources>
