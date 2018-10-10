@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 ListView listaRoteiros = (ListView) findViewById(R.id.listview);
                 adapter = new AdapterRoteiro(roteiros, activity);
                 listaRoteiros.setAdapter(adapter);
+                onCheckboxFimSemana(findViewById(R.id.checkbox_fim_semana));
             }
 
             @Override
@@ -57,6 +59,19 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void onCheckboxFimSemana(View view){
+        boolean checked = ((CheckBox) view).isChecked();
+        List<Roteiro> roteirosNovos = new ArrayList<>();
+        for (Roteiro roteiro : roteiros) {
+            if(roteiro.getFimSemana() == checked){
+                roteirosNovos.add(roteiro);
+            }
+        }
+        ListView listaRoteiros = (ListView) findViewById(R.id.listview);
+        adapter = new AdapterRoteiro(roteirosNovos, activity);
+        listaRoteiros.setAdapter(adapter);
     }
 
 }

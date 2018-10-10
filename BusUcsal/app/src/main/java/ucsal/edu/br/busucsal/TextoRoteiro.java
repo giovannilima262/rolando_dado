@@ -52,8 +52,8 @@ public class TextoRoteiro {
     private static List<Roteiro>  criarRoteiro5() {
         List<Roteiro> roteiros = new ArrayList<>();
 
-        roteiros.add(new Roteiro(5, "10h30", ROTEIRO_5, false));
-        roteiros.add(new Roteiro(5, "12h45", ROTEIRO_5, false));
+        roteiros.add(new Roteiro(5, "10h30", "", false));
+        roteiros.add(new Roteiro(5, "12h45", "", false));
         roteiros.add(new Roteiro(5, "21h40", ROTEIRO_5, false));
 
         return roteiros;
@@ -62,9 +62,9 @@ public class TextoRoteiro {
     private static List<Roteiro>  criarRoteiro4() {
         List<Roteiro> roteiros = new ArrayList<>();
 
-        roteiros.add(new Roteiro(4, "13h30", ROTEIRO_4, false));
+        roteiros.add(new Roteiro(4, "13h30", "", false));
         roteiros.add(new Roteiro(4, "22h15", ROTEIRO_4, false));
-        roteiros.add(new Roteiro(4, "9h50", ROTEIRO_4, true));
+        roteiros.add(new Roteiro(4, "9h50", "", true));
         roteiros.add(new Roteiro(4, "12h30", ROTEIRO_4, true));
 
         return roteiros;
@@ -73,8 +73,8 @@ public class TextoRoteiro {
     private static List<Roteiro>  criarRoteiro3() {
         List<Roteiro> roteiros = new ArrayList<>();
 
-        roteiros.add(new Roteiro(3, "20h30", ROTEIRO_3, false));
-        roteiros.add(new Roteiro(3, "20h55", ROTEIRO_3, false));
+        roteiros.add(new Roteiro(3, "20h30", "", false));
+        roteiros.add(new Roteiro(3, "20h55", "", false));
         roteiros.add(new Roteiro(3, "21h20", ROTEIRO_3, false));
 
         return roteiros;
@@ -83,12 +83,12 @@ public class TextoRoteiro {
     private static List<Roteiro>  criarRoteiro2() {
         List<Roteiro> roteiros = new ArrayList<>();
 
-        roteiros.add(new Roteiro(2, "9h30", ROTEIRO_2, false));
-        roteiros.add(new Roteiro(2, "10h00", ROTEIRO_2, false));
-        roteiros.add(new Roteiro(2, "11h15", ROTEIRO_2, false));
-        roteiros.add(new Roteiro(2, "11h45", ROTEIRO_2, false));
+        roteiros.add(new Roteiro(2, "9h30", "", false));
+        roteiros.add(new Roteiro(2, "10h00", "", false));
+        roteiros.add(new Roteiro(2, "11h15", "", false));
+        roteiros.add(new Roteiro(2, "11h45", "", false));
         roteiros.add(new Roteiro(2, "12h15", ROTEIRO_2, false));
-        roteiros.add(new Roteiro(2, "8h25", ROTEIRO_2, true));
+        roteiros.add(new Roteiro(2, "8h25", "", true));
         roteiros.add(new Roteiro(2, "11h30", ROTEIRO_2, true));
 
         return roteiros;
@@ -97,13 +97,13 @@ public class TextoRoteiro {
     private static List<Roteiro>  criarRoteiro1() {
         List<Roteiro> roteiros = new ArrayList<>();
 
-        roteiros.add(new Roteiro(1, "6h30", ROTEIRO_1, false));
-        roteiros.add(new Roteiro(1, "6h45", ROTEIRO_1, false));
-        roteiros.add(new Roteiro(1, "7h00", ROTEIRO_1, false));
-        roteiros.add(new Roteiro(1, "7h20", ROTEIRO_1, false));
-        roteiros.add(new Roteiro(1, "7h40", ROTEIRO_1, false));
-        roteiros.add(new Roteiro(1, "17h10", ROTEIRO_1, false));
-        roteiros.add(new Roteiro(1, "18h20", ROTEIRO_1, false));
+        roteiros.add(new Roteiro(1, "6h30", "", false));
+        roteiros.add(new Roteiro(1, "6h45", "", false));
+        roteiros.add(new Roteiro(1, "7h00", "", false));
+        roteiros.add(new Roteiro(1, "7h20", "", false));
+        roteiros.add(new Roteiro(1, "7h40", "", false));
+        roteiros.add(new Roteiro(1, "17h10", "", false));
+        roteiros.add(new Roteiro(1, "18h20", "", false));
         roteiros.add(new Roteiro(1, "18h40", ROTEIRO_1, false));
         roteiros.add(new Roteiro(1, "6h50", ROTEIRO_1, true));
 
